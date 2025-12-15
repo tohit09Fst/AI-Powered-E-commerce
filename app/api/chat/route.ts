@@ -15,7 +15,7 @@ export async function POST(request: Request) {
       );
     }
 
-    console.log("[Chat API] Received message:", messages[messages.length - 1]?.content);
+    
 
     // Get the user's session - userId will be null if not authenticated
     const { userId } = await auth();
